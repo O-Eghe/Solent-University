@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solent University</title>    <!-- This is the name of the tab when you render the page-->
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<link href="images/Solent-Logo.png" rel="icon" type="image/x-icon" />
+
+<script src="script.js"></script>
+
+</head>
+
+
+<header>
+
+<div class="logo">
+<!--------------------SECTION 1---------------------------------------------------------------->
+<a href="index.html"><img src="Images/Solent-Logo.png" alt="Logo"></a>  <!-- need to add <a href="index.html to make the logo on the right clickable"-->
+<!--------------------SECTION 1---------------------------------------------------------------->
+
+</div>
+
+
+</header>
+<!--------------------SECTION 2---------------------------------------------------------------->
+
+
+<section class="navigation">
+    <nav>
+        <div class="nav-item"><a href="index.html">About</a></div>
+        <div class="nav-item"><a href="activities.html">Activities</a></div>    <!--- this is for the navigation button at the top --->
+        <div class="nav-item"><a href="modules.html">Modules</a></div>
+        <div class="nav-item"><a href="registration.html">Registration</a></div>
+    </nav>
+</section>
+
+
+<!--------------------SECTION 2---------------------------------------------------------------->
+
+
+<!--------------------SECTION 3---------------------------------------------------------------->
+
+<body>
+
+<div class="container">
+    <h1>Activities Introduction</h1>
+    <p>Activities Introduction
+
+        At Solent University, enjoy sports and fitness facilities, cutting-edge technology workshops, cultural events with the African and Caribbean Society (ACS), 
+        and vibrant student life through the Student Union.</p>
+    <table>
+        <tr>
+            <td>
+                <p> <B> Sports and Fitness </B> - Solent University offers great sports and fitness activities with facilities like gyms, sports halls, and outdoor pitches. 
+                    Students can join teams for football, basketball, and rugby or enjoy individual activities like swimming, yoga, and fitness classes. 
+                    These options help students stay healthy, meet new people, and have fun. </p>
+            </td>
+            <td>
+                <img src="images/Sol.png" alt="Image 1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p> <b> Technology and Innovation Workshops </b> - At Solent University, students get to dive into the latest technology and innovation at their workshops.
+                     They can join hackathons, coding clubs, and tech meetups to learn, create, and work together. 
+                     These workshops are super important because they help students stay updated in the fast-changing tech world. </p>
+            </td>
+            <td>
+                <img src="images/IT.png" alt="Image 2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p> <b> ACS </b> - Solent ACS is a student-run society at Solent University focused on African and Caribbean cultures.
+                     It brings students together through events like cultural showcases and food festivals to celebrate and share their heritage. 
+                    By promoting unity and understanding, Solent ACS adds to the rich diversity of campus life. </p>
+            </td>
+            <td>
+                <img src="images/ACS.png" alt="Image 3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p> <b> Student Union Events </b> - The Solent Student Union represents and supports students at Solent University. 
+                    It organises events, offers advice, and provides opportunities for involvement in clubs and societies.
+                    The Union works to enhance student life and ensure their voices are heard on campus.</p>
+            </td>
+            <td>
+                <img src="images/Union.png" alt="Image 4">
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+<!---------------------------------SECTION 3---------------------------------------------------------------->
+<!---------------------------------FOOTER------------------------------------------------------------------->
+
+
+
+<footer>
+    <div class="contact">   <!-- the contact page in the footer section-->
+        <h2>Contact</h2>
+     <!---  <p> Email: student.hub@solent.ac.uk </p> -->
+     <p>Email: <a href="mailto:student.hub@solent.ac.uk">Student.hub@solent.ac.uk</a></p>
+        <p> Phone: 023 8201 3000</p>
+        <p>Visitor Count: <span id="visitor-counter"></span></p> <!-- Visitor counter -->
+    </div>
+    
+    <div class="about">  <!-- the about page in the footer section-->
+        <h2>About</h2>
+        <p id="about-text">Solent University, located in Southampton, England, is a dynamic and forward-thinking institution offering a wide range of undergraduate and postgraduate programs. Known for its industry-focused approach to education, Solent emphasizes practical learning and professional development, preparing students for successful careers in various fields.</p>
+
+        <!-- The List of countries in the about page -->
+        <label for="language-select">Select Language:</label>
+        <select id="language-select" onchange="changeLanguage(this)">
+            <option value="english" selected>English</option>
+            <option value="arabic">Arabic</option>
+            <option value="chinese">Chinese (Simplified)</option>             
+            <option value="dutch">Dutch</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+            <option value="hindi">Hindi</option>
+        </select>
+    </div> 
+
+    <div class="follow-us">   <!-- the follow page in the footer section-->
+        <h2>Follow Us</h2>
+        <ul>
+            <li><a href="https://twitter.com/SolentUni"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a></li>
+            <li><a href="https://www.facebook.com/SolentUniversity/?locale=en_GB"><img src="images/Facebook.png" alt="Facebook" width="30" height="30"></a></li>
+            <li><a href="https://www.instagram.com/solentuniversity/?hl=en"><img src="images/Instagram.png" alt="Instagram" width="30" height="30"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<!---------------------------------FOOTER---------------------------------------------------------------->
+
+</html>
+

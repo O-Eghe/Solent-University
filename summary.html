@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solent University</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="images/Solent-Logo.png" rel="icon" type="image/x-icon" />
+<script src="script.js"></script>
+
+</head>
+<header>
+    <div class="logo">
+      <a href="index.html"><img src="Images/Solent-Logo.png" alt="Logo"></a>
+    </div>
+  </header>
+<section class="navigation">
+    <nav>
+      <div class="nav-item"><a href="index.html">About</a></div>
+      <div class="nav-item"><a href="activities.html">Activities</a></div>
+      <div class="nav-item"><a href="modules.html">Modules</a></div>
+      <div class="nav-item"><a href="registration.html">Registration</a></div>
+    </nav>
+  </section>
+<body>
+  <div id="registration-form">
+    <!-- User information will be displayed here -->
+  </div>
+
+</body>
+
+
+<footer>
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:student.hub@solent.ac.uk">Student.hub@solent.ac.uk</a></p>
+      <p>Phone: 023 8201 3000</p>
+      <p>Visitor Count: <span id="visitor-counter"></span></p>
+    </div>
+  
+    <div class="about">
+      <h2>About</h2>
+      <p id="about-text">Solent University, located in Southampton, England, is a dynamic and forward-thinking institution offering a wide range of undergraduate and postgraduate programs. Known for its industry-focused approach to education, Solent emphasizes practical learning and professional development, preparing students for successful careers in various fields.</p>
+      <label for="language-select">Select Language:</label>
+  
+      <select id="language-select" onchange="changeLanguage(this)">
+        <option value="english" selected>English</option>
+        <option value="arabic">Arabic</option>
+        <option value="chinese">Chinese (Simplified)</option>
+        <option value="dutch">Dutch</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+        <option value="hindi">Hindi</option>
+      </select>
+  
+    </div>
+  
+    <div class="follow-us">
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a href="https://twitter.com/SolentUni"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a></li>
+        <li><a href="https://www.facebook.com/SolentUniversity/?locale=en_GB"><img src="images/Facebook.png" alt="Facebook" width="30" height="30"></a></li>
+        <li><a href="https://www.instagram.com/solentuniversity/?hl=en"><img src="images/Instagram.png" alt="Instagram" width="30" height="30"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <script>
+    // Parse URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const firstName = params.get('first-name');
+    const surname = params.get('surname');
+    const mobile = params.get ('mobile-number');
+    const gender = params.get ('gender');
+    const comments = params.get ('comments');
+
+
+    // Get other parameters similarly
+
+    // Display user information
+    const userInfoContainer = document.getElementById('registration-form');
+    const userInfoHTML = `
+      <h2>Registration Summary</h2>
+      <p>First Name: ${firstName}</p>
+      <p>Surname: ${surname}</p>
+      <p>Mobile: ${mobile }</p>
+      <p>Gender: ${gender}</p>
+      <p>Comments: ${comments}</p>
+
+      <!-- Display other user information similarly -->
+    `;
+    userInfoContainer.innerHTML = userInfoHTML;
+
+
+    function handleSubmit(event) {
+  event.preventDefault();
+  var password = document.getElementById('password').value;
+  var confirmPassword = document.getElementById('confirm-password').value;
+  var message = document.getElementById('message');
+
+  if (password === confirmPassword) {
+      message.textContent = "Registration successful";
+      message.style.color = "green";
+  }
+    }
+
+  </script> 
+
+</html>

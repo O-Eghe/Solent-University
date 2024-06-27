@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solent University</title>    <!-- This is the name of the tab when you render the page-->
+
+<!-- Bootstrap -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<link href="images/Solent-Logo.png" rel="icon" type="image/x-icon" />
+
+<script src="script.js"></script>
+
+</head>
+
+<header>
+
+<div class="logo">
+<!--------------------SECTION 1---------------------------------------------------------------->
+<a href="index.html"><img src="Images/Solent-Logo.png" alt="Logo"></a>  <!-- need to add <a href="index.html to make the logo on the right clickable"-->
+<!--------------------SECTION 1---------------------------------------------------------------->
+
+</div>
+
+
+</header>
+<!--------------------SECTION 2---------------------------------------------------------------->
+
+
+<section class="navigation">
+    <nav>
+        <div class="nav-item"><a href="Index.html">About</a></div>
+        <div class="nav-item"><a href="Activities.html">Activities</a></div>    <!--- this is for the navigation button at the top --->
+        <div class="nav-item"><a href="Modules.html">Modules</a></div>
+        <div class="nav-item"><a href="Registration.html">Registration</a></div>
+    </nav>
+</section>
+
+<body>
+<!--------------------SECTION 2---------------------------------------------------------------->
+
+
+<!--------------------SECTION 3---------------------------------------------------------------->
+
+<div class="profile-section">
+    <div class="profile">
+        <img src="Images/Profile-image copy.png" alt="Profile 1">
+        <div class="overlay">School History</div>
+    </div>
+    <div class="profile">
+        <img src="Images/School-Ambitions.png" alt="Profile 2">        <!-- This affects the 3 pictures with the name History, Ambitions and Text (it makes the pictures run side by side)-->
+        <div class="overlay">School Ambitions</div>
+    </div>
+    <div class="profile">
+        <img src="Images/Post graduation.png" alt="Profile 3">
+        <div class="overlay">Post Graduation</div>
+    </div>
+</div>
+
+
+<div class="introduction">
+    <div class="text">
+        <h2>Welcome to Solent University</h2>
+        <p>Solent University is a prestigious educational institution committed to providing high-quality education and fostering a supportive learning environment for students.</p>
+        <p>Our school offers a wide range of programs and courses designed to meet the diverse needs and interests of our students.</p>
+        <h3>Why Choose Solent University?</h3>
+        <ul>
+            <li>Experienced and dedicated faculty</li>        <!--- this section is to welcome the pupiles to the university -->                
+            <li>State-of-the-art facilities</li>
+            <li>Hands-on learning opportunities</li>
+            <li>Strong community engagement</li>
+        </ul>
+        <p>Explore our <a  href="Activities.html">programs</a> to learn more about what Solent University has to offer!</p>   <!-- here would be for the link (PROGRAMS) // allows me to add the link so it can bring me to the Activities page -->
+   
+    </div>
+    <div class="image">
+        <img src="Images/School-Introduction.png" alt="Solent School Image">   <!--the picture on the side -->
+    </div>
+</div>
+
+
+</body>
+<!---------------------------------SECTION 3---------------------------------------------------------------->
+
+
+
+<!---------------------------------FOOTER---------------------------------------------------------------->
+
+
+<footer>
+    <div class="contact">   <!-- the contact page in the footer section-->
+        <h2>Contact</h2>
+     <!---  <p> Email: student.hub@solent.ac.uk </p> -->
+     <p>Email: <a href="mailto:student.hub@solent.ac.uk">Student.hub@solent.ac.uk</a></p>
+        <p> Phone: 023 8201 3000</p>
+        <p>Visitor Count: <span id="visitor-counter"></span></p> <!-- Visitor counter -->
+    </div>
+    
+    <div class="about">  <!-- the about page in the footer section-->
+        <h2>About</h2>
+        <p id="about-text">Solent University, located in Southampton, England, is a dynamic and forward-thinking institution offering a wide range of undergraduate and postgraduate programs.
+             Known for its industry-focused approach to education, Solent emphasizes practical learning and professional development, preparing students for successful careers in various fields.</p>
+
+        <!-- The List of countries in the about page -->
+        <label for="language-select">Select Language:</label>
+        <select id="language-select" onchange="changeLanguage(this)">
+            <option value="english" selected>English</option>
+            <option value="arabic">Arabic</option>
+            <option value="chinese">Chinese (Simplified)</option>             
+            <option value="dutch">Dutch</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+            <option value="hindi">Hindi</option>
+        </select>
+    </div> 
+
+    <div class="follow-us">   <!-- the follow page in the footer section-->
+        <h2>Follow Us</h2>
+        <ul>
+            <li><a href="https://twitter.com/SolentUni"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a></li>
+            <li><a href="https://www.facebook.com/SolentUniversity/?locale=en_GB"><img src="images/Facebook.png" alt="Facebook" width="30" height="30"></a></li>
+            <li><a href="https://www.instagram.com/solentuniversity/?hl=en"><img src="images/Instagram.png" alt="Instagram" width="30" height="30"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+</html>
+

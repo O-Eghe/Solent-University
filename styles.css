@@ -1,0 +1,532 @@
+/*--------------------------------------------Index Page----------------------------------------------------------*/
+
+header {
+  min-height: 35vh;   /* this changes the hight of the background picture at the top*/
+  width: 100%;
+  background-image: url(Images/Solent-Background-Image.png); /* this is for the background picture at the top with the solent backgrounf */
+  background-size: 125%;
+  background-position: center;
+  text-align: right;  /*Logo aligns to the top right */
+  transition: background-size 0.3s ease-in-out;
+
+ }
+ 
+ .logo img {
+   max-width: 10%;            /* this changes the size of the "Solent University logo */
+   height: auto;
+   max-height: 150px; /* Adjust max-height as needed */
+   padding: 25px; /*this brings the Solent logo into positon */
+ } 
+
+ @media (max-width: 768px) {
+   header {
+     display: flex;
+     justify-content: flex-end;     /* this allows me to move the logo to the right side */
+     text-align: center;
+     text-align: center;
+   }
+ 
+
+ .logo img {
+   max-width: 110px;
+   padding: 30px 8px 0px 15px;       /* this allows me to move the logo to the right side */
+ }
+}
+/*--------------------------------------------Index Page--------------------------------------------------------*/
+/*--------------------------------------------Index Page--------------------------------------------------------*/
+
+.navigation {
+ background-color: #555555; /* This changes the navigation color from grey to something else */
+
+}
+
+.navigation nav {
+ display: flex;  /* Using the (***FLEX***) section allows the navigation section to align side by side */ 
+ justify-content: space-around;   /* the space between About , Activities , Modules , Registrationss */
+ align-items: center;
+ padding: 20px 0; /* this allows the grey section on the navigation section to drop down */
+ 
+}
+
+.nav-item{
+ color: white;
+ font-size: 18px;
+text-transform: uppercase;
+}
+
+.nav-item a{
+ text-decoration: none;
+ color: inherit;   /* this is for the nav button */
+ padding: 10px 20px;    /* this renders the page to the right */
+}
+
+.nav-item a:hover {
+ color: red; /* Colour on hover */
+}
+
+@media (max-width: 768px) {
+ .navigation nav {
+   flex-direction: column;  /*nav section for small devices */
+ }
+
+ .nav-item {
+   margin-bottom: 10px;     /*nav section for small devices */
+ }
+}
+
+.profile-section {
+ display: flex;
+ justify-content: space-around;      /* This affects the 3 pictures with the name History, Ambitions and Text (it makes the pictures run side by side) */
+ align-items: center;
+ margin-top: 20px;
+}
+
+.profile {
+ position: relative;  /* This affects the 3 pictures with the name History, Ambitions and Text (it makes the pictures run side by side) */
+ width: 33%; /* Adjust the width of each of the 3 pictures.. the lesser the percentage 30% for example the more the wider the white would be in the middle of each pictures */
+}
+
+.profile img {
+ width: 100%;  /* Adjust the width of each of the 3 pictures.. the lesser the percentage 30% for example the more the wider the white would be in the middle of each pictures */
+ height: auto;
+ display: block;
+}
+
+.overlay {
+ /* position: absolute; */   /* this is allows the text in the school appear under the picture */
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+ color: white;
+ text-align: center;
+ padding: 10px;
+ /*opacity: 0;  Initially hidden */   /* This makes the text in the page transparent.. the most it can go too is (opacity 1;) */
+ transition: opacity 0.3s ease;
+}
+
+.profile:hover .overlay {
+ opacity: 1; /* Show overlay on hover */
+}
+
+@media (max-width: 768px) {
+ .profile-section {
+   flex-direction: column;
+ }
+
+ .profile {
+   width: 85%;
+   margin-bottom: 20px;       /* changes the size of the three pictures for a small device */
+ }
+}
+
+.text {
+ background-color: rgb(201, 196, 150);    /*changes the background color of the (Welcome to Solent University) */
+ padding: 0px 10px 0px 10px;
+ margin-right: 55px;
+}
+
+.introduction {     /* this affects the second nav button on the Welcome to Solent School */
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px;
+ 
+}
+
+.text {
+ flex: 1;
+}
+
+.text h2 {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+
+.text h3 {
+ font-size: 20px;
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+
+.text p {
+ margin-bottom: 15px;
+}
+
+.text ul {
+ margin-bottom: 15px;
+}
+
+.image img {
+ max-width: 400px;
+ height: auto;
+ display: block;
+} 
+
+@media (max-width: 768px) {
+ .introduction {
+   flex-direction: column;
+ }
+
+ .image img {
+   max-width: 100%;
+   margin-top: 20px;
+ }
+}
+
+/*--------------------------------------------Index Page--------------------------------------------------*/
+/*--------------------------------------------Index Page--------------------------------------------------*/
+
+/* ------------------------------------------------FOOTER-------------------------------------------------*/
+/* affects the FOOTER section section */
+/* ------------------------------------------------FOOTER-------------------------------------------------*/
+
+footer {
+ background-color: #333333;
+ color: white;
+ padding: 20px;
+ display: flex;
+ justify-content: space-around;
+}
+
+.contact, .about, .follow-us {
+ flex: 1;
+}
+
+.contact h2, .about h2, .follow-us h2 {
+ font-size: 18px;
+}
+
+.follow-us h2 {
+ padding: 0px 10px 0px 200px;
+}
+
+.contact p, .about p {
+ font-size: 14px;
+ margin-bottom: 10px;
+/* padding: 0px 10px 0px 200px;      this moves the email, phone, visitor count  etc under contact */
+}
+
+.contact a {
+ color: white; /* this will make the email white*/
+ text-decoration: none; /* Removes underline */
+}
+
+.contact a:hover {
+ text-decoration: underline; /* this will allow the email to be underlined when i hover over it.*/
+}
+
+.follow-us ul {
+ list-style: none;
+ padding: 0;
+}
+
+.follow-us li {
+ margin-bottom: 5px;
+ padding: 0px 10px 0px 200px;          /* this moves the Facebook etc to the side */
+}
+
+.follow-us a {
+ color: white;
+ text-decoration: none;
+}
+
+@media (max-width: 768px) {
+ footer {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .contact h2, .about h2, .follow-us h2 {
+   text-align: center;
+ }
+
+ .follow-us h2, .follow-us li {
+   padding: 0;
+   text-align: center;
+ }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+                       /*   About Section   */
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------------------------------------*/
+                                    /*Activities Section */
+/*-------------------------------------------------------------------------------------------------*/
+
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+.container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+ text-align: center; /* Center align content */
+}
+
+table {
+ width: 89%;      /*this made the table small*/
+ border-collapse: collapse;
+ 
+}
+
+th, td {
+ padding: 8px;
+ text-align: center;
+ vertical-align: top;
+ border: 7px solid #ddd; /* this made the border ticker */
+/* border-color: green; */
+font-size: 17px;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+ border-radius: 8px;
+}
+
+
+.activities-introduction {
+ text-align: center;
+ margin-bottom: 20px; /* Add margin to separate sections */
+}
+
+.activities-introduction h2 {
+ font-size: 24px;
+ font-weight: bold;
+ color: #333;
+}
+
+.activities-introduction p {
+ font-size: 16px;
+ color: #666;
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px; /* Adjust the margin-top value to move the page up */
+}
+
+.container img {
+    /* font-size: 5px; */
+    max-width: 300px;
+  /*  padding: 0px 10px; */
+    display: block; 
+  
+} 
+
+.container h1 {
+ font-size: 30px;
+}
+
+@media (max-width: 768px) {
+ table {
+   width: 100%; /* Table width for smaller screens */
+ }
+
+ th, td{
+   padding: 10px 10px 0px 0px; /* Reduce padding for smaller screens */
+   text-align: center;  }
+
+ td img {
+   max-width: 100%;
+   width: 120%; /* Ensure images inside table cells take up full width */
+   height: auto;
+ }
+}
+
+
+/* ------------------------------------------------------------------------------------------------*/
+                                                /*Activities Section */
+/*-------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+                                               /*   Modules Section   */
+/*--------------------------------------------------------------------------------------------------*/
+
+body {
+ font-family: Arial, sans-serif;
+}
+
+/*.empty-table {
+ width: 100%;
+ border-collapse: collapse;
+} */
+
+/*.empty-table th, .empty-table td {
+ border: 1px solid #ccc;
+ padding: 8px;
+ text-align: center;
+} */
+
+/* .red {
+ color: red;
+}  */
+
+.ccontainer h2{
+ font-size: 30px;        /* Changes the size of modules */
+ text-align: center;
+}
+
+
+.small-table {
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 85px;             /* Move the table from side to side*/
+margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+ .small-table {
+   margin: 0px 2px 35px 0px;
+   width: 100%;
+ }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+                                               /*   Modules Section   */
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------
+                                         Registraction Form Section
+/*------------------------------------------------------------------------------------------------------------- */
+
+/* Container for the form */
+.containerr {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 125vh;
+ background-image: url('images/solenttt.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-color: #702c2c;
+}
+
+/* Form header styling */
+.containerr h2 {
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+/* Registration form styling */
+.registration-form {
+ width: 100%;
+ max-width: 600px;
+ padding: 20px;
+ border: 1px solid #ccc;
+ border-radius: 10px;
+ background-color: #f4f4f4;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ margin: 0 20px;
+}
+
+/* Form group styling */
+.form-group {
+ margin-bottom: 20px;
+ display: flex;
+ flex-direction: column;
+}
+
+.form-group label {
+ margin-bottom: 5px;
+ font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ box-sizing: border-box;
+}
+
+/* Radio button styling */
+.form-group .radio-group {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.form-group .radio-group label {
+ margin-right: 10px;
+}
+
+.form-group .radio-group input[type="radio"] {
+ margin-right: 5px;
+}
+
+/* Styling for submit button */
+#registration-form button[type="submit"] {
+ width: 100%;
+ padding: 15px;
+ border: none;
+ border-radius: 5px;
+ background-color: #4caf50; /* Green color */
+ color: #fff;
+ font-size: 16px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+#registration-form button[type="submit"]:hover {
+ background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Message styling */
+#message {
+ margin-top: 10px;
+ text-align: center;
+ color: green;
+ font-weight: normal;
+}
+
+#message.error {
+ color: red;
+ font-weight: bold;
+} 
+
+@media (max-width: 768px) {
+ .containerr {
+   height: auto;
+   padding: 20px;
+ }
+
+ .registration-form {
+   width: 90%;
+   margin: 0 auto;
+ }
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+                                         Summary page
+/*------------------------------------------------------------------------------------------------------------- */
+
+
+#registration-form {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#registration-form p {
+  margin-bottom: 10px;
+}
